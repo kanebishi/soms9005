@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+html {
+  font-size: 14px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1.5px;
+  font-kerning: auto;
+  line-height: 1.75;
+  padding-top: 60px;
+}
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+}
+body,
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans Japanese", sans-serif, Helvetica!important;
+  font-feature-settings: "pkna"!important;
+}
+header .navbar {
+  opacity: 0.9;
+}
+.navbar-light .navbar-toggler {
+  border: none;
+}
+.en {
+  font-family: "Roboto"!important;
+  font-weight: 500;
+}
+ul.presentation,
+ul.plan,
+ul.report,
+ul.tv,
+ul.radio,
+ul.paper,
+ul.web {
+  padding-left: 16px;
+}
+ul.presentation li,
+ul.plan li,
+ul.report li,
+ul.tv li,
+ul.radio li,
+ul.paper li,
+ul.web li {
+  margin-bottom: 1.5rem;
+}
+.horizontal.divider {
+  display: table;
+  white-space: nowrap;
+  height: auto;
+  xmargin: 1rem 0;
+  line-height: 1;
+}
+.horizontal.divider:before {
+  background-position: right 1em top 50%;
+}
+.horizontal.divider:after {
+  background-position: left 1em top 50%;
+}
+.horizontal.divider:after,
+.horizontal.divider:before {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAACCAYAAACuTHuKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OThBRDY4OUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1OThBRDY4QUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5OEFENjg3Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5OEFENjg4Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VU513gAAADVJREFUeNrs0DENACAQBDBIWLGBJQby/mUcJn5sJXQmOQMAAAAAAJqt+2prAAAAAACg2xdgANk6BEVuJgyMAAAAAElFTkSuQmCC);
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 50%;
+  background-repeat: no-repeat;
+}
+.horizontal.divider.left:after {
+  width: 100%;
+}
+.horizontal.divider.left:before {
+  width: 0%;
+}
+.horizontal.divider.right:after {
+  width: 0%;
+}
+.horizontal.divider.right:before {
+  width: 100%;
+}
+.horizontal.divider.center:after {
+  width: 50%;
+}
+.horizontal.divider.center:before {
+  width: 50%;
+}
+
+/*
+ * slider
+ */
+.top-slider {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+.top-slider figure {
+  margin: 0;
+}
+.top-slider-item {
+    width: 100%;
+    padding-bottom: 70vh;
+    background: 50% 50% /cover no-repeat;
+}
+.top-slider-item img {
+  display: none!important;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+@media screen and (max-width:960px) {
+  .top-slider {
+    height: calc(70vh - 47px);
+  }
+  .top-slider-item {
+    padding-bottom: calc(70vh - 47px);
+  }
+}
+
+/*
+ * loader
+ */
+.g-loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fffffc;
+  overflow: hidden;
+  z-index: 10000;
+}
+.g-loading_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin-top: -15px
+}
+.g-loading_bar-container{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1;
+  margin-top: 15px;
+}
+.g-loading_bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e4e4e4;
+  width: 0;
+  height: 1px;
+  -webkit-transition: width .4s ease-out 0s;
+  transition: width .4s ease-out 0s;
+  z-index: 10;
+}
+.g-loading_progress_text {
+  color: #999;
+  font-size: 60%;
+  padding: 8px;
+  text-align: center;
+}
